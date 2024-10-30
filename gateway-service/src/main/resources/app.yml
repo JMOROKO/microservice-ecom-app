@@ -1,0 +1,21 @@
+# configuration des routes de la gateway de façon statique
+spring:
+  cloud:
+    gateway:
+      # celà marche avec la nouvelle version de cette dépendance spring-cloud-starter-gateway-mvc
+      #mvc:
+      routes:
+        - id: r1
+          #pour la configuration static
+          #uri: http://localhost:8082
+          #pour la configuration dynamique
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path= /api/customers/**
+        - id: r2
+          #avant l'utilisation de discovery-service dans la configuration static
+          #uri: http://localhost:8083
+          #après l'utilisation de discovery-service dans la configuration static
+          uri: lb://INVENTORY-SERVICE
+          predicates:
+            - Path= /api/products/**

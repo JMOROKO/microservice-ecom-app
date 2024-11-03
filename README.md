@@ -1,4 +1,4 @@
-# Micro service
+# Microservice
 
 1. Il faut d'abord créer un projet java maven simple
 2. Créer les modules spring boot (les microservice)

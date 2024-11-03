@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df07b7cc-9bd3-49c3-8007-4e66ba6ac682" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/app.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/silstechnologie/inventoryservice/config/RestRepositoryConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/silstechnologie/inventoryservice/entities/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/silstechnologie/inventoryservice/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/entities/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/entities/ProductItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/feign/CustomerRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/feign/ProductRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/repository/BillRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/repository/ProductItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/web/BillRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,6 +57,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BillingServiceApplication.executor": "Run",
     "Spring Boot.CustomerServiceApplication.executor": "Run",
     "Spring Boot.DiscoveryServiceApplication.executor": "Run",
     "Spring Boot.GetwayServiceApplication.executor": "Run",
@@ -89,7 +94,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GetwayServiceApplication">
+  <component name="RunManager" selected="Spring Boot.BillingServiceApplication">
+    <configuration name="BillingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="billing-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.silstechnologie.billingservice.BillingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="customer-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.silstechnologie.customerservice.CustomerServiceApplication" />
@@ -136,7 +148,8 @@
       <option name="presentableId" value="Default" />
       <updated>1730220802519</updated>
       <workItem from="1730220803651" duration="14339000" />
-      <workItem from="1730320897178" duration="1847000" />
+      <workItem from="1730320897178" duration="2304000" />
+      <workItem from="1730642402789" duration="5366000" />
     </task>
     <servers />
   </component>

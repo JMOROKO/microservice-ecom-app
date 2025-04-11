@@ -1,12 +1,15 @@
 package com.silstechnologie.customerservice;
 
+import com.silstechnologie.customerservice.config.CustomerConfigParams;
 import com.silstechnologie.customerservice.entities.Customer;
 import com.silstechnologie.customerservice.repository.CustomerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-
+//TODO 7- demander à spring d'aller charger la configuration au démarrage
+@EnableConfigurationProperties(CustomerConfigParams.class)
 @SpringBootApplication
 public class CustomerServiceApplication {
 

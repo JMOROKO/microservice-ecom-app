@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class BillRestController {
     private final BillRepository billRepository;
-    private final ProductItemRepository productItemRepository;
+    //private final ProductItemRepository productItemRepository;
     private final CustomerRestClient customerRestClient;
     private final ProductRestClient productRestClient;
 

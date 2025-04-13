@@ -44,4 +44,49 @@
    - Une fois la configuration faite, pour accéder aux api il faut saisir l'adresse de la Gateway suivi du nom du microservice et de l'api a appeler. Exemple : http://localhost:8888/CUSTOMER-SERVICE/api/customers
    - tu remarqueras que le nom du microservice ici est écrit en majuscule pour permettre de l'écrire en minuscule il faut aller vers la gateway et ajouter la propriete suivante
      - spring.cloud.gateway.discovery.locator.lower-case-service-id=true
-
+9. Centralisation des fichiers de configuration
+    - Il faut creer un module config-service
+    - Il faut creer les fichiers de configuration pour chaque microservice
+      - application.properties pour conserver la configuration commune pour chaque fichier de configuration
+      - customer-serive.properties pour conserver la configuration spécifique du microservice customer-service
+      - customer-serive-dev.properties pour conserver la configuration spécifique du microservice customer-service en mode developpement
+      - customer-serive-prod.properties pour conserver la configuration spécifique du microservice customer-service en mode production
+    - Dans la configuration commune (application.properties) il faut activer les endpoints health et refresh
+      - management.endpoints.web.exposure.include=health refresh
+    - Ajouter la dépendance spring-cloud-starter-config dans les micro services et dans la gateway
+    - creer un micro service config-service
+      - ajouter la dépendance spring-cloud-starter-config
+      - ajouter l'annotation @EnableConfigServer dans le point d'entrée de l'application
+      - ajouter la dépendance spring-cloud-starter-actuator pour pouvoir faire du monitoring
+      - ajouter la dépendance spring-boot-starter-web pour pouvoir exposer le service de configuration
+      - ajouter la dépendance spring-cloud-starter-netflix-eureka-client pour pouvoir s'enregistrer dans le discovery service
+      - il faut aussi déterminer ou trouver les fichiers de configuration dans le fichier application.properties
+        - Si la configuration est en local
+          - spring.cloud.config.server.git.uri=E:/exercices/spring/microservice-ecom-app/config-repo
+        - Si la configuration est sur github
+          - spring.cloud.config.server.git.uri=https://github.com/JMOROKO/bank-account-config-repo
+      - Une fois le microservice démarré, 
+        - il faut aller vers l'url http://localhost:8888/application/default pour voir la configuration de l'application par defaut
+        - il faut aller vers l'url http://localhost:8888/customer-service/default pour voir la configuration du microservice customer-service
+        - il faut aller vers l'url http://localhost:8888/customer-service/dev pour voir la configuration du microservice customer-service en mode developpement
+        - il faut aller vers l'url http://localhost:8888/customer-service/prod pour voir la configuration du microservice customer-service en mode production
+    - Dans les fichiers application.properties de chaque microservice et de la gateway, il faut ajouter la configuration suivante
+      - spring.cloud.config.enabled=true # pour activer la configuration mais se n'est pas obligatoire car sa valeur par defaut est true
+      - spring.config.import=optional:configserver:http://localhost:9999 pour aller récupérer la configuration ou http://localhost:9999 represente l'adresse de configuraiton
+      - pour pouvoir récupérer les configurations modifié à chaud il faut ajouter la dépendance spring-cloud-starter-actuator
+      - Ajouter @RefreshScope pour permettre de rafraichir la configuration à chaud
+      - Faire du repertoire config-repo un repository git
+      - Utiliser les commandes git pour faire le commit et le push si necessaire
+      - Pour faire le refresh à chaud de la configuration, il faut aller vers l'url 
+        - Pour le micro-service customer-service
+            - POST http://localhost:8082/actuator/refresh
+              Accept: application/json
+        - Pour le micro-service account-service
+            - POST http://localhost:8081/actuator/refresh
+              Accept: application/json
+        - ...
+   10. Maintenant démarrons les services pour le test
+        - Commencer par démarrer le discovery service
+        - Ensuite démarrer le config service
+        - Ensuite démarrer le customer service
+        - 

@@ -8,9 +8,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+@SpringBootApplication
 //TODO 7- demander à spring d'aller charger la configuration au démarrage
 @EnableConfigurationProperties(CustomerConfigParams.class)
-@SpringBootApplication
 public class CustomerServiceApplication {
 
     public static void main(String[] args) {

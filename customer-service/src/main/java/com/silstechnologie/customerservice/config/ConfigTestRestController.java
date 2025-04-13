@@ -11,9 +11,9 @@ import java.util.Map;
 @RestController
 @RefreshScope // TODO 8- cette classe doit être rechargée à chaque fois qu'on change la configuration et qu'on fait un actuator refresh
 public class ConfigTestRestController {
-    //@Value("${global.params.p1}")
+    @Value("${global.params.p1}")
     private String p1;
-    //@Value("${global.params.p2}")
+    @Value("${global.params.p2}")
     private String p2;
     @Autowired
     private CustomerConfigParams customerConfigParams;

@@ -17,8 +17,6 @@
       <change beforePath="$PROJECT_DIR$/config-repo/inventory-service-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service-prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/inventory-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/silstechnologie/customerservice/config/ConfigTestRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/silstechnologie/customerservice/config/ConfigTestRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/silstechnologie/customerservice/config/CustomerConfigParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/silstechnologie/customerservice/config/CustomerConfigParams.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +109,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GetwayServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ConfigServiceApplication">
     <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/customer-service/rest-api.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -201,7 +199,7 @@
       <workItem from="1744363866279" duration="536000" />
       <workItem from="1744450030990" duration="11759000" />
       <workItem from="1744534441378" duration="146000" />
-      <workItem from="1744534657864" duration="1739000" />
+      <workItem from="1744534657864" duration="3389000" />
     </task>
     <servers />
   </component>

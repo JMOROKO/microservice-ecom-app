@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df07b7cc-9bd3-49c3-8007-4e66ba6ac682" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/silstechnologie/getwayservice/config/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/billing-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/billing-service-dev.properties" afterDir="false" />
@@ -16,7 +17,6 @@
       <change beforePath="$PROJECT_DIR$/config-repo/inventory-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/inventory-service-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service-prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/inventory-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/exercices/spring/microservice-ecom-app/config-repo",
+    "last_opened_file_path": "E:/developpements/spring/ghita",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,7 +109,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServiceApplication">
+  <component name="RunManager" selected="Spring Boot.GetwayServiceApplication">
     <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/customer-service/rest-api.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -199,7 +199,7 @@
       <workItem from="1744363866279" duration="536000" />
       <workItem from="1744450030990" duration="11759000" />
       <workItem from="1744534441378" duration="146000" />
-      <workItem from="1744534657864" duration="3389000" />
+      <workItem from="1744534657864" duration="11420000" />
     </task>
     <servers />
   </component>

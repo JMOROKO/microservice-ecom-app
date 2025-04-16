@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df07b7cc-9bd3-49c3-8007-4e66ba6ac682" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/silstechnologie/getwayservice/config/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/feign/CustomerRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/silstechnologie/billingservice/feign/CustomerRestClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/billing-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/billing-service-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/billing-service-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/billing-service-prod.properties" afterDir="false" />
@@ -60,36 +60,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.rest-api | #1.executor": "Run",
-    "HTTP Request.rest-api_1 | #1.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BillingServiceApplication.executor": "Run",
-    "Spring Boot.ConfigServiceApplication.executor": "Run",
-    "Spring Boot.CustomerServiceApplication.executor": "Run",
-    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
-    "Spring Boot.GetwayServiceApplication.executor": "Run",
-    "Spring Boot.InventoryServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/developpements/spring/ghita",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.rest-api | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.rest-api_1 | #1.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BillingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CustomerServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GetwayServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.InventoryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/developpements/spring/ghita&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\exercices\spring\microservice-ecom-app\config-repo" />
@@ -109,7 +109,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GetwayServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ConfigServiceApplication">
     <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/customer-service/rest-api.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -199,7 +199,13 @@
       <workItem from="1744363866279" duration="536000" />
       <workItem from="1744450030990" duration="11759000" />
       <workItem from="1744534441378" duration="146000" />
-      <workItem from="1744534657864" duration="11420000" />
+      <workItem from="1744534657864" duration="11766000" />
+      <workItem from="1744711737529" duration="601000" />
+      <workItem from="1744743220010" duration="237000" />
+      <workItem from="1744743809552" duration="1204000" />
+      <workItem from="1744759469435" duration="2534000" />
+      <workItem from="1744807869518" duration="684000" />
+      <workItem from="1744812343069" duration="5241000" />
     </task>
     <servers />
   </component>

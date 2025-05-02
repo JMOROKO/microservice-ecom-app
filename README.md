@@ -33,7 +33,7 @@
        - eureka.instance.prefer-ip-address=true
 5. Ordre de démarrage
     - Démarrer le discovery service en premier
-    - ensuite les microservices
+    - ensuite les microservices (si config service existe il faut le demarrer en deuxième)
     - enfin la gateway
     - S'il y avait un service de configuration, il serait le premier à être démarré
 6. Préparation pour la configuration du système de routage de manière dynamique
@@ -90,3 +90,5 @@
         - Ensuite démarrer le config service
         - Ensuite démarrer le customer service
         - 
+# prise en charge intellij AI
+https://www.youtube.com/watch?v=zMSmhKDajKQ

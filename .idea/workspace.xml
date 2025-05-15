@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df07b7cc-9bd3-49c3-8007-4e66ba6ac682" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/billing-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/billing-service-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/billing-service-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/billing-service-prod.properties" afterDir="false" />
@@ -18,11 +16,15 @@
       <change beforePath="$PROJECT_DIR$/config-repo/inventory-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/inventory-service-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service-prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/inventory-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/silstechnologie/getwayservice/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/silstechnologie/getwayservice/config/Config.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -216,7 +218,12 @@
       <workItem from="1744965193037" duration="406000" />
       <workItem from="1744966231431" duration="34000" />
       <workItem from="1746205959989" duration="595000" />
-      <workItem from="1746209845138" duration="176000" />
+      <workItem from="1746209845138" duration="1692000" />
+      <workItem from="1746372819330" duration="545000" />
+      <workItem from="1746527085882" duration="30000" />
+      <workItem from="1746963829069" duration="803000" />
+      <workItem from="1747129574942" duration="166000" />
+      <workItem from="1747343687638" duration="2892000" />
     </task>
     <servers />
   </component>

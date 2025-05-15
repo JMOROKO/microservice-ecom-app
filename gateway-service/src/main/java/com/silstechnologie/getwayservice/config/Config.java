@@ -11,7 +11,8 @@ public class Config {
     @Bean
     public CorsWebFilter corsWebFilter() {
         CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOrigin("http://localhost:4200"); // Ton front Angular
+        config.addAllowedOrigin("*"); // autoriser tout le monde
+        // config.addAllowedOrigin("http://localhost:4200"); // Ton front Angular
         config.addAllowedMethod("*");
         config.addAllowedHeader("*");
         config.setAllowCredentials(true);
